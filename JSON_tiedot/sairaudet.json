@@ -1,0 +1,27 @@
+{  
+    "Masennus": {
+         
+            "Kliininen_kuva":  "Uupuneisuus, alentunut mieliala, mikään ei tunnu kivalta" ,
+            "Hoito": "On tärkeää löytää itselle mielekästä tekemistä. Se mitä tekee vaikuttaa tunteisiin ja ajatuksiin itsestä. On tärkeää alkaa etsimään takaisin kaikkia niitä toimintoja, joista on nauttinut. Myös liikunnan lisääminen on hyvä  idea, kannattakin miettiä etukäteen pari kertaa viikossa tapahtuvaa itselle mielekästä liikuntaa. Tuomitsevuus itseä tai muita kohtaan lisääntyy masennuksen myötä. Niitä kannattaa opetella tunnistamaan ja pääsemään irti. ",
+            "Lääkkeet":  "Masennuksessa lääkitys on tehokkaampaa terapian ohella. ",
+            "Etiologia":  "Lorem ipsum... onko masis"       
+    },
+    
+    
+    "Syömishäiriö": {
+          
+            "Kliininen_kuva":  "Ylensyönti tai aliravitemus ",
+            "Hoito":  "Ravitsemustietous, Kognitiivis - Behavioristinen terapia " ,
+            "Lääkkeet":  "Syömishäiriön lääkitys A, B ja C " ,
+            "Etiologia":  "Lorem ipsum... eikä ruoka maita "                  
+    },
+
+    
+    "Paniikkihäiriö": {  
+
+            "Kliininen_kuva":  "Ahdistuneisuus, kohonnut verenpaine. " ,
+            "Hoito":  "Paniikkihäirötä voidaan hoitaa lääkityksellä ja terapialla " ,
+            "Lääkkeet":  "A, B, G, ja F ",
+            "Etiologia":  "Lorem ipsum...voi aiheuttaa paniikkikohtauksen "   
+    }
+}
