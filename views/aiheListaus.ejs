@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Aihelistau</title>
+        <link rel="stylesheet" href="/tyylit.css" type="text/css">
+    </head>
+    <body>
+        <h2>Hakutulos aiheen mukaan</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Lääkkeen tuotenimi</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <% laakkeet.forEach(laake => { %>
+                    <tr>
+                        <td>
+                            <%= laake.nimi %>
+                        </td>  
+                    </tr>
+                
+                <% }); %>
+            </tbody>
+        </table>
+        <br>
+        <a href="/laake"><button>Takaisin lääkesivustolle</button></a>
+    </body>
+</html>

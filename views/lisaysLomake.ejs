@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title><%= paaotsikko %></title>
+    <link rel="stylesheet" href="./tyylit.css" type="text/css">
+</head>
+
+<body>
+    <h3> <%= otsikko %> </h3>
+
+    <form action="/lisaaLaake" method="POST">
+        Kauppanimi:
+        <input type="text" name="nimi" value="">
+        <br><br>
+
+        Käytön aihe:
+        <input type="text" name="indikaatio" value="">
+        <br><br>
+
+        Vaikuttava aine:
+        <input type="text" name="vaikuttavaAine" value="">
+        <br><br>
+
+        Sivuvaikutukset (Kirjoita virkeitä käyttäen):
+        <input type="text" name="sivuvaikutukset" value="">
+        <br><br>
+
+        Ryhmä (esim. Mielialalääkkeet):
+        <input type="text" name="ryhma" value="">
+        <br><br>
+
+        <button type="submit"> Lisää </button>
+    </form>
+    <br>
+    
+
+    <h2>Linkit</h2>
+    <table>
+    <td><a href="/laake"> <button>Takaisin lääke sivulle</button> </a></td>
+
+    <td><form action="/haeKaikki" method="POST"> 
+        <button> Listaa kaikki lääkkeet </button>
+        </form>
+    </td>
+    <td>
+        
+    </td>
+    </table>    
+</body>
+</html>

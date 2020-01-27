@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title><%= paaotsikko %></title>
+  <link rel="stylesheet" href="./tyylit.css" type="text/css">
+</head>
+
+<body>
+    <nav>
+        Sivuston päälinkit
+        <a href="/"> <button> Kotisivulle </button></a>
+        <a href="./tieto"><button>Hae tietoa sairauksista</button></a>
+        <a href="./testi"><button>Tee testi</button></a>
+      </nav>
+
+  <h1> <%= otsikko %> </h1>
+  <p>Lääkehakuja voi tehdä ns. kauppanimen, sivuvaikutusten, hoidon aiheen ja ryhmän (esim. mielialalääkkeet),
+     mukaan. Kirjoita ensin hakusana ja sen jälkeen painat nappia, minkä mukaan haluat tietoa hakea.
+    Lääkkeen poisto tapahtuu myös tällä sivulla.
+    </p>
+  <p>
+
+      
+      <table>
+        <tr>
+           <td><form action="/haeKaikki" method="POST"> <button> Listaa kaikki lääkkeet </button></form>
+           </td>
+           <td>
+             <a href="/lisaysLomake"> <button> Lisää lääke </button> </a>
+           </td>
+        </tr>
+      </table>  
+ 
+      <h4>Suorita haku alla olevien kategorioiden mukaan</h2>
+      <p>
+          <form action="/haeTuotenimi" method="POST">
+            Hakusana: <br>
+            <input type="text" name="hakusana">
+            <h4>Suorita haku alla olevan kategorian mukaan</h2>
+
+              <div style="margin-bottom: 15px;">
+                <button type="submit">Tuotenimi</button>
+                Tuotenimen sisältämät tiedot
+              </div>
+
+
+              <div style="margin-bottom: 15px;">
+                <button type="submit" formaction="/haeIndikaatio">Hoidon aihe</button>
+                Mitä lääkkeitä kyseiseen sairauteen on? Kirjoita sairauden nimi hakulaatikkoon.
+              </div>
+
+              <div>
+                <button type="submit" formaction="/haeRyhma"> Ryhmä</button>
+                Jos haluat esim. särkylääkkeet kirjoita: särkylääkkeet. Jos haluat mielialalääkkeet
+                kirjoita: mielialalääkkeet
+              </div>
+
+              <div style="margin-bottom: 15px;"></div>
+                <button type="submit" formaction="/poistaLaake"> Poista lääke </button>
+                Tämä toiminto poistaa lääkkeen tietokannasta
+              </div>
+          </form>
+  </p>
+ </body>
+
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Kaikki lääkkeet</title>
+        <link rel="stylesheet" href="/tyylit.css" type="text/css">
+    </head>
+    <body>
+        <h2>Kaikki lääkkeet</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Nimi</th>
+                    <th>Sivuvaikutukset</th>
+                    <th>Vaikuttava aine</th>
+                    <th>Ryhmä</th>
+                    <th>Indikaatio</th>
+                </tr>
+            </thead>
+            <tbody>
+             
+                    <tr>
+                        <td>
+                            <%= laake.nimi %>
+                        </td>
+                        <td>
+                            <%= laake.sivuvaikutukset %>
+                        </td>
+                        <td>
+                            <%= laake.vaikuttavaAine %>
+                        </td>
+                        <td>
+                            <%= laake.ryhma %>
+                        </td>
+                        <td>
+                            <%= laake.indikaatio %>
+                        </td>
+                    </tr>
+                
+            
+            </tbody>
+        </table>
+        <br>
+        <a href="/laake"><button>Takaisin lääkesivustolle</button></a>
+    </body>
+</html>

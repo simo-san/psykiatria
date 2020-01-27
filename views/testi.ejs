@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+<meta charset="utf-8">
+<title><%= paaotsikko %></title>
+<link rel="stylesheet" href="./tyylit.css" type="text/css">
+
+</head>
+
+<body>
+    <nav>
+        Sivuston päälinkit
+        <a href="/"> <button> Kotisivulle </button></a>
+        <a href="./laake"><button>Lääkesivulle</button></a>
+        <a href="./tieto"><button>Etsi tietoa sairauksista</button> </a>
+    </nav>
+
+  <h1> <%= otsikko %> </h1>
+  <p> Tällä hetkellä on vain masennustesti. Josta malliksi vain muutama oire. BDI-testissä taitaa olla
+    oikeasti jopa 21 kohtaa, mutta tekniikka ja logiikka on sama. Siksi demonstroidaan vain pari kohtaa.
+
+  </p>
+
+  <p> <%= viesti %> </p>
+ 
+  <form action="/laskePisteet" method="POST">
+    <h3>Nukahtamisvaikeudet</h3>
+    <input type="radio" name="oire1" value="0">Ei lainkaan<br>
+    <input type="radio" name="oire1" value="1">Hieman<br>
+    <input type="radio" name="oire1" value="2">En osaa sanoa<br>
+    <input type="radio" name="oire1" value="3">Tuntuvasti<br>
+    <input type="radio" name="oire1" value="4">Häiritsevästi<br>
+    
+    <h3>Syyllisyyden tunnet</h3>
+    <input type="radio" name="oire2" value="0">Ei lainkaan<br>
+    <input type="radio" name="oire2" value="1">Hieman<br>
+    <input type="radio" name="oire2" value="2">En osaa sanoa<br>
+    <input type="radio" name="oire2" value="3">Tuntuvasti<br>
+    <input type="radio" name="oire2" value="4">Häiritsevästi<br> 
+      
+    <h3>Ahdistuneisuuden tunne</h3>
+    <input type="radio" name="oire3" value="0">Ei lainkaan<br>
+    <input type="radio" name="oire3" value="1">Hieman<br>
+    <input type="radio" name="oire3" value="2">En osaa sanoa<br>
+    <input type="radio" name="oire3" value="3">Tuntuvasti<br>
+    <input type="radio" name="oire3" value="4">Häiritsevästi<br>
+
+    <input type="submit" value="Lomakkeen tulos"><br>
+    </form>
+  
+</body>
+
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8">
+    <title><%= paaotsikko %></title>
+    <link rel="stylesheet" href="./tyylit.css" type="text/css">
+
+ 
+    </head>
+
+    <body>
+            <nav>
+                    Tässä Sivuston päälinkit
+                    <a href="/"> <button> Kotisivulle </button></a>
+                    <a href="/laake"><button>Lääke</button></a>
+                    <a href="/testi"><button>Tee testi</button></a>
+            </nav> 
+        <h1> <%= otsikko %> </h1>
+        <p>Tälle sivulle saavuttuaan sivuston vierailijalla on mahdollisuus hakea tietoa alla olevia lomakkeita käyttäen. Tällä hetkellä JSON tiedostot ovat vain syömishäiriöstä, masennuksesta ja paniikkihäiriöstä.
+            Piirre on hieman yksityiskohtaisempaa tietoa, joka on tärkeää tietoa sekin.
+            Jos haluaa kaikki tiedot yhdestä sairaudesta voi mennä alempaan lomakkeeseen ja kirjoittaa hakusana
+            ja sitten taas painaa nappulaa.
+        </p>
+            <p>
+            <h3> <%= viesti %> </h3>
+            <form action="./haeTieto" method="POST">
+            Sairaus: <br>
+            <input type="text" name="sairaus" value="">
+            <br>
+            Piirre: <br>
+            <input type="text" name="piirre" value="">
+            <br><br>
+            <input type="submit" value="Paina tästä">
+          </form> 
+        </p>
+        <p>
+        <h3> <%= viesti %> </h3>
+            <form action="./haeSairaus" method="POST">
+            Sairaus: <br>
+                 <input type="text" name="sairaus" value="">
+                 <br>
+                <br>
+                 <input type="submit" value="Paina tästä">
+             </form> 
+        </p>
+    </body>
+
+</html>
